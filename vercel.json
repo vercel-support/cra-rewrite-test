@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "scope": "trmediaab",
+  "regions": ["arn1"],
+
+  "rewrites": [
+    { "source": "/((?!static|api).*)", "destination": "/index.html" }
+  ]
+}
