@@ -3,8 +3,8 @@
   "scope": "trmediaab",
   "regions": ["arn1"],
 
-  "rewrites": [
-    { "source": "/((?!static|api).*)", "destination": "/index.html" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/other-404.html" }
   ]
 }
