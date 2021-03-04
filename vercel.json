@@ -1,5 +1,10 @@
 {
   "version": 2,
   "scope": "trmediaab",
-  "regions": ["arn1"]
+  "regions": ["arn1"],
+
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
 }
