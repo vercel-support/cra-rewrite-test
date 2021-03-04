@@ -4,6 +4,6 @@
   "regions": ["arn1"],
 
   "rewrites": [
-    { "source": "/((?!static|api).*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
